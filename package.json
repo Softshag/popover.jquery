@@ -1,0 +1,38 @@
+{
+  "name": "jquery.popover",
+  "description": "jQuery popover plugin",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rasmus/jQuery.Popover",
+  "author": {
+    "name": "Rasmus Kildevæld",
+    "email": "rasmuskildevaeld@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Softshag/popover.jquery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Softshag/popover.jquery/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rasmus/jQuery.Popover/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/jQuery.Popover",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "0.4.0rc7",
+    "grunt-contrib-concat": "0.1.2rc6",
+    "grunt-contrib-uglify": "0.1.1rc6",
+    "grunt-contrib-nodeunit": "0.1.2rc6",
+    "grunt-contrib-watch": "0.2.0rc5",
+    "grunt": "0.4.0rc7"
+  }
+}
