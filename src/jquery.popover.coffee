@@ -59,11 +59,11 @@
 
 			@_content.addClass @settings.containerClass
 
-			@_content.css(display:'none').appendTo @settings.attach
+			@_content.css(display:'none', position:'absolute').appendTo @settings.attach
 			
 			pos = getPosition @element, @settings.position, @_content, @settings.offsetX, @settings.offsetY
 			
-			@_content.css(position:'absolute').css(pos)
+			@_content.css(pos)
 			
 			@_isOpen = yes
 			
@@ -78,6 +78,7 @@
 			
 			cb = -> $(@).remove()
 			@settings.hideFn.apply @_content, [cb]
+			
 		destroy: =>
 			@hide() if @_isOpen()
 			@element.unbind @_method, @show
